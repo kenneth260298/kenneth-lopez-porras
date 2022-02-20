@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { App } from './App';
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 
 ReactDOM.render(
-  <App className="primary-bg" />,
+  <BrowserRouter>
+    <App className="primary-bg" />
+  </BrowserRouter>,
   document.getElementById('root')
 );
